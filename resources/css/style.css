@@ -54,6 +54,7 @@ header .content {
 
 header .logo {
   flex: 1;
+  letter-spacing: .2rem;
 }
 
 header nav ul {
