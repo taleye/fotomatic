@@ -8,6 +8,7 @@ html {
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
+  max-width: 100%;
 }
 
 .center {
@@ -26,6 +27,7 @@ html {
 
 .image-container img {
   display: block;
+  width: 100%
 }
 
 @media only screen and (max-width: 760px) {
@@ -38,6 +40,7 @@ html {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
@@ -115,11 +118,18 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
 }
 
+.banner {
+  background-image: url("../images/banner-landingpage.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 #sign-up-cta {
+  margin-left: 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -211,25 +221,28 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
+  justify-content: center;
+  padding: 4rem 0;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  padding-top: 2rem;
+  margin: 0px 1.1875rem;
   background-color: white;
+/*  height: 39.6875rem; */
+  max-width: 45%;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 0 5%;
 }
 
 .feature h2 {
+padding-top: 2.5rem;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -241,6 +254,11 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+.feature .content {
+  padding: 0 2rem;
+  height: 11.6875rem;
 }
 
 @media only screen and (max-width: 890px) {
