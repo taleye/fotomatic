@@ -274,11 +274,12 @@ padding-top: 2.5rem;
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  padding-bottom: 1rem;
 }
 
 .feature .content {
   padding: 0 2rem;
-  height: 11.6875rem;
+  min-height: 11.6875rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -315,6 +316,7 @@ padding-top: 2.5rem;
   .feature .content {
     padding: 0;
     height: auto;
+    min-height: auto;
   }
 }
 
@@ -323,11 +325,14 @@ padding-top: 2.5rem;
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: normal;
+    text-align: center;
   }
 
   .feature h3 {
     font-size: .875rem;
     line-height: 1.4;
+    text-align: center;
+    padding-bottom: 1.875rem;
   }
 }
 
@@ -344,13 +349,8 @@ padding-top: 2.5rem;
     padding: 1rem 1rem 0 1rem;
   }
 
-  #features-section h2,
-  #features-section h3 {
-    text-align: center;
-  }
-
-  #features-section h3 {
-    padding-bottom: 1.875rem;
+  .feature .content {
+    min-height: auto;
   }
 }
 
